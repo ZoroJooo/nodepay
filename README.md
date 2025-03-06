@@ -34,7 +34,7 @@ Automate farming Nodepay Network using proxies. Important! Please read the Infor
 
 ```bash
 git clone https://github.com/ZoroJooo/nodepay
-cd nodepay-automate
+cd nodepay
 ```
 - Installing requirements:
 ```bash
@@ -59,18 +59,7 @@ python runv2.py
 ```
 >Press Enter then Select 2 -->
 ## Run command
-### Windows and Termux
-- Run for original server - version 2:
-```bash
-python runv2.py
-```
->Press Enter, Select 1 then insert your nodepay token
-- Run for original server - version 2 - multi accounts:
->Make sure you have tokens in ``tokens.txt`` before
-```bash
-python runv2.py
-```
->Press Enter then Select 2
+
 ### Linux Distros
 - Run for original server - version 2:
 ```bash

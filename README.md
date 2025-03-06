@@ -30,58 +30,18 @@ Automate farming Nodepay Network using proxies. Important! Please read the Infor
 ![0002](https://github.com/im-hanzou/getgrass_bot/blob/main/nodepaytoken.png)
 - The text that appears is your nodepay token and copy the text
 # Components installation
-### WINDOWS
-Now this script support Windows without [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-- Install Python For Windows: [Python](https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe)
-- Download this script Manually: [Nodepay Automate](https://github.com/im-hanzou/nodepay-automate/archive/refs/heads/main.zip)
-- If you want to use Git, Please download Git first: [Git Windows](https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.1/Git-2.47.1-64-bit.exe), Then run in cmd:
+### LINUX
+
 ```bash
-git clone https://github.com/im-hanzou/nodepay-automate
+git clone https://github.com/ZoroJooo/nodepay
+cd nodepay-automate
 ```
-- Make sure you are in this script directory: ``cd nodepay-automate``
 - Installing requirements:
 ```bash
-python -m pip install -r requirements.txt
-```
-<!-- - For Windows, now you need to install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) to run Linux inside Windows.
-- How to install WSL: [Youtube Tutorial](https://www.youtube.com/watch?v=HrAsmXy1-78&ab_channel=LogicLambda).
-- Next, follow the Linux component installation steps below within the [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) terminal.-->
-### LINUX
-- For Linux Ubuntu/Debian, install Python3 and Git:
-```bash
-apt update; apt upgrade -y; apt install git python3 python3-pip -y
-```
-- For Linux CentOS, install Python3 and Git:
-```bash
-yum update; yum upgrade -y; yum install git python3 python3-pip -y
-```
-- Download this script using Git:
-```bash
-git clone https://github.com/im-hanzou/nodepay-automate
-```
-- Make sure you are in this script directory: ``cd nodepay-automate``
-- Installing requirements: 
-```bash
+apt install python3.12-venv
+python3 -m venv .venv
+source .venv/bin/activate
 python3 -m pip install -r requirements.txt
-```
-### TERMUX
-- For Termux Android [Download Here](https://f-droid.org/repo/com.termux_1020.apk) [F-Droid Version] and Allow Permission Storage On Setting Termux
-- Install Python3 and Git:
-```bash
-pkg update; pkg upgrade -y; pkg install git python python-pip -y
-```
-- Download this script using Git:
-```bash
-git clone https://github.com/im-hanzou/nodepay-automate
-```
-- Make sure you are in this script directory: ``cd nodepay-automate``
-- Copy ``libcurl-impersonate-chrome.so.4`` to ``/data/data/com.termux/files/usr/lib``
-```bash
-cp libcurl-impersonate-chrome.so.4 /data/data/com.termux/files/usr/lib
-```
-- Installing requirements: 
-```bash
-python -m pip install -r requirements.txt
 ```
 # Run the Script
 - Replace the proxies example in ```proxies.txt``` to your own proxies, please use only 3 proxies with proxies. If you run multiple accounts make sure you have 3 proxies for each accounts.
